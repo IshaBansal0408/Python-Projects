@@ -1,0 +1,32 @@
+import streamlit as st
+st.write("Welcome to askpython.com!")
+st.write("In this tutorial, we are learning about Streamlit library!!")
+
+st.title ("Welcome Developer!! (title tag)")
+st.header("Introduction to Streamlit (header tag)")
+st.subheader("Understanding the basic texts of library (subheading tag)")
+st.code("<add your code here>")
+st.latex(r''' a^2 + 2*a*b + b^2 = 0''')
+
+st.title ("Adding Media to the Website")
+st.image("samp.jpg")
+st.audio("audio.mp3")
+
+st.title ("Adding Widgets to the Website")
+st.checkbox('Yes')
+st.checkbox('No')
+st.button('Click me! I am a Button!')
+st.radio('Pick your gender',['Male','Female','Trans'])
+st.selectbox('Pick your age group',['<18','18-30','>30'])
+st.multiselect('Choose games to play',['Ludo','Card Games','Connect4','TicTacToe'])
+st.select_slider('Choose one!', ['Introvert','Neither','Extrovert'])
+st.slider('Pick a number! ',0,100)
+
+st.title("Some input Forms to the Website")
+st.number_input('Pick a number ', 0,100)
+st.text_input('Enter Email address ')
+st.date_input('Enter your date of birth ')
+st.time_input('Enter your approx time of birth ')
+st.text_area('Tell us something about yourself ')
+st.file_uploader('Upload your passport size photo')
+st.color_picker('Choose a color code for your profile ')
